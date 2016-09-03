@@ -1,0 +1,45 @@
+.about{
+
+.content {
+  color: black;
+  font-family: monospace;
+  justify-content: center;
+
+}
+
+
+.background {
+  background-image: asset-url("community.jpeg");
+  height: calc(100vh - 52px);
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+hr {
+  max-width: 200px;
+  border-color: orange;
+  border-width: 8px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 50px auto;
+  justify-content: center;
+  color: orange;
+
+}
+
+.feature {
+  flex: 0 0 280px;
+  margin: 20px 10px;
+}
+
+}

@@ -1,0 +1,21 @@
+
+
+<h1 class="text-center">
+Topics</h1>
+
+
+<% @topics.each do |topic| %>
+  <div class="topic text-center">
+    <h3><%= topic.title %></h3>
+    <h5><%= topic.description %></h5>
+    <%= link_to topic.title, topic_posts_path(topic) %>
+
+    <%= button_to "Edit Topic", edit_topic_path(topic), :method => :get %>
+    <%= button_to "Delete Topic", topic_path(topic), method: :delete, data: { confrm: "Delete" } %>
+
+  </div>
+
+  <% end %>
+<div class = "text-center">
+<%= button_to "NEW", new_topic_path, :method => :get %>
+</>

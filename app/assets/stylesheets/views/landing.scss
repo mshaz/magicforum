@@ -1,0 +1,100 @@
+.landing {
+
+  .background {
+    background-image: asset-url("IOTheader.jpeg");
+    height: calc(100vh - 52px);
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-2 {
+    height: 20vh -10px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+  }
+
+  .content {
+    color: white;
+    font-family: monospace;
+  }
+
+  .content-2 {
+    color: black;
+    font-family: monospace;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+    justify-content: center;
+    color: orange;
+
+  }
+
+  .feature {
+    flex: 0 0 280px;
+    margin: 20px 10px;
+  }
+
+  .minipics {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+    justify-content: center;
+    position: relative;
+  }
+
+  .imgtag {
+    flex: 0 0 280px;
+    margin: 20px 10px;
+    position: relative;
+  }
+
+  .imgtag:hover .invisible-layout {
+     opacity: 0.5;
+     transition: all 0.3s ease-in-out;
+   }
+
+   .invisible-layout {
+     position: absolute;;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     display: flex;
+     justify-content: center;
+     background-color: yellow;
+     align-items: center;
+   }
+
+
+    hr {
+      max-width: 159px;
+      border-color: orange;
+      border-width: 5px;
+    }
+
+  @media all and (max-width: 1199px) {
+     .features {
+       max-width: 600px;
+     }
+
+
+     .short-underline {
+       width: 50px;
+       border-bottom: 2px solid orange;
+     }
+  }
+
+}
